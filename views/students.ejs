@@ -1,0 +1,33 @@
+<%- include("partial/header.ejs", { title: "Student Grade" }) %>
+
+    <div class="container text-center" style="margin-bottom: 20px; margin-top: 20px;">
+        <h1>Student <%= student[0].name %> Grade</h1>
+    </div>
+
+    <div class ="container">
+        <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>Lecture</th>
+                <th>Teacher</th>
+                <th>Score</th>
+                <th>Comment</th>    
+              </tr>
+            </thead>
+            <tbody>
+                <% for (let i = 0; i < student[0].Lectures.length ; i++) { %>
+                    <tr>    
+                        <td><%= student[0].Lectures[i].subject %></td>
+                        <td><%= (teacher.find((el) => el.id === student[0].Lectures[i].TeacherId)).name %></td>
+                        <td><%= student[0].Lectures[i].Grade.nilai %></td>
+                        <td><%= student[0].Lectures[i].Grade.komentar %></td>
+                    </tr>
+                <% } %>
+            </tbody>
+          </table>
+    </div>
+    
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+<%- include("partial/footer.ejs") %>

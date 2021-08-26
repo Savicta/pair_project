@@ -1,0 +1,42 @@
+<%- include("partial/header.ejs", { title: "Login Student" }) %>
+
+
+    <div class="jumbotron text-center" style= "margin-top: 20px; margin-bottom: 10px;">
+        <h1>Login Student</h1>
+    </div>
+
+    <div class ="container">
+        <form class="row g-3" method="POST" action="/students/login"> 
+            
+                 <div class="col-6">
+                     <label for="username" class="form-label"> Username </label>
+                     <input type="text" class="form-control" id="username" name = "username" placeholder="e.g: John">
+                 </div>
+                 <div class="col-6">
+
+                 </div>
+
+                 <div class="col-6">
+                     <label for="password" class="form-label"> Password </label>
+                     <input type="password" class="form-control" id="password" name = "password" placeholder="e.g: Doe">
+                 </div>
+
+                 <div class="col-6">
+
+                 </div>
+                 
+                 <div class="col-2">
+                     <input class="btn btn-primary" type="submit" value="Login" id="submit-btn">
+                 </div>
+ 
+                 <div class="col-10">
+ 
+                 </div>
+         </form>
+         
+         
+         <%- //include("partial/errors.ejs") %>
+         
+     </div>
+
+<%- include("partial/footer.ejs") %>

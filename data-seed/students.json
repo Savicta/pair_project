@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Henry",
+        "gender": "Male",
+        "phone_number" : "0219993002",
+        "birth_date" : "1990-09-09",
+        "email": "harry@sekolah.id",
+        "username": "student1",
+        "password": "12345",
+        "discordId": "180643049255337984"
+    },
+    {
+        "name": "Kurniawan",
+        "gender": "Male",
+        "phone_number" : "0877726271",
+        "birth_date" : "1999-09-09",
+        "email": "potter@sekolah.id",
+        "username": "student2",
+        "password": "12345",
+        "discordId": "180643049255337984"
+    },
+    {
+        "name": "Victor pamungkas",
+        "gender": "Female",
+        "phone_number" : "090999282882",
+        "birth_date" : "1995-09-09",
+        "email": "hermione@sekolah.id",
+        "username": "student3",
+        "password": "12345",
+        "discordId": "858336970061119518"
+    },
+    {
+        "name": "Savicta mandata",
+        "gender": "Male",
+        "phone_number" : "089892833322",
+        "birth_date" : "1994-09-09",
+        "email": "draco@sekolah.id",
+        "username": "student4",
+        "password": "12345",
+        "discordId": "858336970061119518"
+    },
+    {
+        "name": "Brian",
+        "gender": "Female",
+        "phone_number" : "0877265653",
+        "birth_date" : "1980-09-09",
+        "email": "luna@sekolah.id",
+        "username": "student5",
+        "password": "12345",
+        "discordId": "403936611206823958"
+    }
+]

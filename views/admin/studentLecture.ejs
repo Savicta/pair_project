@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hacktiv8 Student Grading</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/admins">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/admins/list-teacher">Teachers</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/admins/list-student">Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admins/list-lecture">Lectures</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-sm-0">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+<div class="jumbotron container">
+  <h1 class="display-4">Edit <%= data.name %>'s Lecture</h1>
+  <p class="lead">This is simple Student Grading website.</p>
+  <hr class="my-4">
+  <form method="POST" id="form">
+    <label for="LectureId">Lecture:</label>
+    <select name="LectureId" id="LectureId">
+    <% lecture.forEach(el => { %>
+      <% let flag = false %> 
+      <% data.Lectures.forEach(element => { %>
+        <% if (el.id == element.Grade.LectureId) { %>
+          <% flag = true %>
+        <% } %>
+        <% }); %>
+        <% if(!flag) { %>
+        <option value="<%= el.id %>"><%= el.subject %> | <%= el.formatInputDate() %></option>
+        <% } %>
+    <% }); %>
+    </select>
+  </form>
+  <input class="btn btn-primary btn-lg" form="form" type="submit" value="Submit">
+  <input class="btn btn-primary btn-lg" form="form" type="reset" value="Cancel" onclick="window.location='/admins/list-student';">
+  <br><br>
+  <table border="1" width="100%">
+    <thead>
+      <th>Lecture</th>
+      <th>Time</th>
+    </thead>
+    <tbody>
+      <% data.Lectures.forEach(el => { %>
+        <tr>
+          <td><%= el.subject %></td>
+          <td><%= el.time %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

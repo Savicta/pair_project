@@ -1,0 +1,19 @@
+<div class ="container">
+    <h1>List Cast</h1>
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>Actor</th>
+            <th>Role</th>       
+          </tr>
+        </thead>
+        <tbody>
+            <% for (let i = 0; i < movie[0].Casts.length; i++) { %>
+                <tr>    
+                    <td><%= movie[0].Casts[i].showFullName() %></td>
+                    <td><%= movie[0].Casts[i].MovieCast.role %></td>
+                </tr>
+            <% } %>
+        </tbody>
+      </table>
+</div>

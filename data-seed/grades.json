@@ -1,0 +1,56 @@
+[
+    {
+        "nilai": 50,
+        "komentar": "Try harder",
+        "StudentId": 1,
+        "LectureId": 1
+    },
+    {
+        "nilai": 100,
+        "komentar": "Perfect!",
+        "StudentId": 2,
+        "LectureId": 1
+    },
+    {
+        "nilai": 80,
+        "komentar": "Good Enough",
+        "StudentId": 3,
+        "LectureId": 1
+    },
+    {
+        "nilai": 30,
+        "komentar": "Please try harder",
+        "StudentId": 2,
+        "LectureId": 2
+    },
+    {
+        "nilai": 70,
+        "komentar": "Good Enough",
+        "StudentId": 3,
+        "LectureId": 2
+    },
+    {
+        "nilai": 80,
+        "komentar": "Good Enough",
+        "StudentId": 4,
+        "LectureId": 4
+    },
+    {
+        "nilai": 90,
+        "komentar": "Great!",
+        "StudentId": 5,
+        "LectureId": 4
+    },
+    {
+        "nilai": 85,
+        "komentar": "Good!",
+        "StudentId": 1,
+        "LectureId": 4
+    },
+    {
+        "nilai": 40,
+        "komentar": "Could be better",
+        "StudentId": 1,
+        "LectureId": 5
+    }
+]

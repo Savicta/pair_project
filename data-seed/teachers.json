@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Alibaba",
+        "gender": "Male",
+        "phone_number" : "0888999899",
+        "email": "alibaba@sekolah.id",
+        "username": "adminsatu",
+        "password": "1234",
+        "isAdmin": true
+    },
+    {
+        "name": "Maria",
+        "gender": "Female",
+        "phone_number" : "0876554111",
+        "email": "maria@sekolah.id",
+        "username": "teacher1",
+        "password": "1111",
+        "isAdmin": false
+    },
+    {
+        "name": "Garry",
+        "gender": "Male",
+        "phone_number" : "08911220321",
+        "email": "garry@sekolah.id",
+        "username": "teacher2",
+        "password": "2222",
+        "isAdmin": false
+    }
+]

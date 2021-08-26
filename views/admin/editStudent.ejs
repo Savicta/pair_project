@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hacktiv8 Student Grading</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/admins">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/admins/list-teacher">Teachers</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/admins/list-student">Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admins/list-lecture">Lectures</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-sm-0">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+<div class="jumbotron container">
+  <h1 class="display-4">Editing <%= data.name %>'s Data</h1>
+  <p class="lead">This is simple Student Grading website.</p>
+  <hr class="my-4">
+  <form method="POST" id="form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" value="<%= data.name %>"><br><br>
+
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" <%= data.gender.toLowerCase() == 'male' ? "checked" : null %>>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" <%= data.gender.toLowerCase() == 'female' ? "checked" : null %>>
+    <label for="female">Female</label><br><br>
+
+    <label for="birth_date">Birth Date:</label><br>
+    <input type="date" id="birth_date" name="birth_date" value="<%= data.birth_date %>"><br><br>
+
+    <label for="phone_number">Phone Number:</label><br>
+    <input type="text" id="phone_number" name="phone_number" value="<%= data.phone_number %>"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" value="<%= data.email %>"><br><br>
+
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" value="<%= data.username %>"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" value="<%= data.password %>"><br><br>
+
+    <label for="discordId">Discord Id:</label><br>
+    <input type="text" id="discordId" name="discordId" value="<%= data.discordId %>"><br><br>
+
+  </form>
+  <input class="btn btn-primary btn-lg" form="form" type="submit" value="Submit">
+  <input class="btn btn-primary btn-lg" form="form" type="reset" value="Cancel"onclick="window.location='/admins/list-student';">
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

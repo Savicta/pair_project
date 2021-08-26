@@ -1,0 +1,32 @@
+[
+    {
+        "subject": "Node JS",
+        "time": "",
+        "TeacherId": 2
+    },
+    {
+        "subject": "DOM",
+        "time": "",
+        "TeacherId": 3
+    },
+    {
+        "subject": "MVC",
+        "time": "",
+        "TeacherId": 2
+    },
+    {
+        "subject": "Array",
+        "time": "",
+        "TeacherId": 2
+    },
+    {
+        "subject": "Sequelize",
+        "time": "",
+        "TeacherId": 1
+    },
+    {
+        "subject": "ORM",
+        "time": "",
+        "TeacherId": 3
+    }
+]
