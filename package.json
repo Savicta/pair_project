@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Henry-Kurniawan/H8StudentGrading.git"
+    "url": "git+https://github.com/Savicta/pair_project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Henry-Kurniawan/H8StudentGrading/issues"
+    "url": "https://github.com/Savicta/pair_project.git/issues"
   },
-  "homepage": "https://github.com/Henry-Kurniawan/H8StudentGrading#readme",
+  "homepage": "https://github.com/Savicta/pair_project.git#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "discord.js": "^13.1.0",

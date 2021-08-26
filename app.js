@@ -7,9 +7,9 @@ const session = require("express-session")
 app.set("view engine", "ejs")
 
 
-app.use("/", express.static(__dirname + "public"))
+app.use(express.static(__dirname + "public"))
 
-app.use("/", express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }))
 
 app.use(session({
     secret: "keyboard cat",
@@ -17,7 +17,7 @@ app.use(session({
     saveUninitialized: true
 }))
 
-app.use("/", router)
+app.use(router)
 
 
 app.listen(port, () => {
